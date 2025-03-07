@@ -1,3 +1,6 @@
+using System.Collections;
+using Avalonia.Media.Imaging;
+
 namespace jobEvent;
 
 public class NewsItem
@@ -9,6 +12,7 @@ public class NewsItem
     public string link { get; set; }
     public string date { get; set; }
     
+    public Bitmap Image => new Bitmap("./Assets/icons.png");
     public string ShortDescription
     {
         get

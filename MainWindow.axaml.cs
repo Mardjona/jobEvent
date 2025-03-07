@@ -18,18 +18,82 @@ public partial class MainWindow : Window
     
    
     public List<NewsItem>? NewsItems { get; set; }
+    List<DateTime> listDate = new List<DateTime>()
+        {
+            new DateTime(2025, 03, 04),
+            new DateTime(2025, 03, 11),
+            new DateTime(2025, 03, 14),
+            new DateTime(2025, 04, 5),
+            new DateTime(2025, 04, 19),
+            new DateTime(2025, 06, 8),
+            new DateTime(2025, 06, 01),
+        };
 
     public MainWindow()
     {
         InitializeComponent();
         EmployeeJobLoad();
         LoadNewsData();
-        //DataContext = this;
+        var today = DateTime.Today;
+        DataContext = this;
+        MainCalendar.Loaded += OnCalendarLoaded;
+        MainCalendar.DisplayDateChanged += CustomCalendar_DisplayDateChanged;
       
+       
+
 
 
 
     }
+    private void CustomCalendar_DisplayDateChanged(object? sender, CalendarDateChangedEventArgs e)
+    {
+        BrushesCalendar();
+    }
+    
+
+    private void BrushesCalendar()
+    {
+        foreach (var child in MainCalendar.GetVisualDescendants())
+        {
+            if (child is CalendarDayButton dayButton)
+            {
+                var dateNow = (MainCalendar as Calendar).DisplayDate;
+
+                string vv = dayButton.Content!.ToString()!;
+
+                try
+                {
+                    if (listDate.Contains(new DateTime(dateNow.Year, dateNow.Month, int.Parse(vv))))
+                    {
+                        dayButton.Background = Brushes.LightYellow;
+                        dayButton.Foreground = Brushes.Red;
+                        ToolTip.SetTip(dayButton, "i love you");
+                    }
+                    else
+                    {
+                        dayButton.Background = Brushes.LightGray;
+                        dayButton.Foreground = Brushes.Black;
+                    }
+                }
+                catch
+                {
+                    dayButton.Background = Brushes.LightGray;
+                    dayButton.Foreground = Brushes.Black;
+                }
+
+            }
+           
+
+        }
+
+        
+    }
+
+    private void OnCalendarLoaded(object sender, EventArgs e)
+    {
+        BrushesCalendar();
+    }
+    
 
     private void EmployeeJobLoad()
     {

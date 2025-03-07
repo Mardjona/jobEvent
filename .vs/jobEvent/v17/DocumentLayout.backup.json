@@ -1,0 +1,87 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\adm111\\source\\repos\\jobEvent\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{CCC3D096-0F72-4241-87E4-28D7B167E520}|jobEvent.csproj|c:\\users\\adm111\\source\\repos\\jobevent\\mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}",
+      "RelativeMoniker": "D:0:0:{CCC3D096-0F72-4241-87E4-28D7B167E520}|jobEvent.csproj|solutionrelative:mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCC3D096-0F72-4241-87E4-28D7B167E520}|jobEvent.csproj|c:\\users\\adm111\\source\\repos\\jobevent\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCC3D096-0F72-4241-87E4-28D7B167E520}|jobEvent.csproj|solutionrelative:mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCC3D096-0F72-4241-87E4-28D7B167E520}|jobEvent.csproj|c:\\users\\adm111\\source\\repos\\jobevent\\newsitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCC3D096-0F72-4241-87E4-28D7B167E520}|jobEvent.csproj|solutionrelative:newsitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCC3D096-0F72-4241-87E4-28D7B167E520}|jobEvent.csproj|c:\\users\\adm111\\source\\repos\\jobevent\\jobevent.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{CCC3D096-0F72-4241-87E4-28D7B167E520}|jobEvent.csproj|solutionrelative:jobevent.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "jobEvent",
+              "DocumentMoniker": "C:\\Users\\adm111\\Source\\Repos\\jobEvent\\jobEvent.csproj",
+              "RelativeDocumentMoniker": "jobEvent.csproj",
+              "ToolTip": "C:\\Users\\adm111\\Source\\Repos\\jobEvent\\jobEvent.csproj",
+              "RelativeToolTip": "jobEvent.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-07T08:23:54.075Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "NewsItem.cs",
+              "DocumentMoniker": "C:\\Users\\adm111\\source\\repos\\jobEvent\\NewsItem.cs",
+              "RelativeDocumentMoniker": "NewsItem.cs",
+              "ToolTip": "C:\\Users\\adm111\\source\\repos\\jobEvent\\NewsItem.cs",
+              "RelativeToolTip": "NewsItem.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T09:11:43.185Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.axaml.cs",
+              "DocumentMoniker": "C:\\Users\\adm111\\source\\repos\\jobEvent\\MainWindow.axaml.cs",
+              "RelativeDocumentMoniker": "MainWindow.axaml.cs",
+              "ToolTip": "C:\\Users\\adm111\\source\\repos\\jobEvent\\MainWindow.axaml.cs",
+              "RelativeToolTip": "MainWindow.axaml.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowCgAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T09:20:53.777Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.axaml",
+              "DocumentMoniker": "C:\\Users\\adm111\\source\\repos\\jobEvent\\MainWindow.axaml",
+              "RelativeDocumentMoniker": "MainWindow.axaml",
+              "ToolTip": "C:\\Users\\adm111\\source\\repos\\jobEvent\\MainWindow.axaml",
+              "RelativeToolTip": "MainWindow.axaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-03-07T10:03:20.58Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -4916,26 +4916,31 @@
     ]
   },
   "packageFolders": {
-    "/Users/admin/.nuget/packages/": {}
+    "C:\\Users\\adm111\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/admin/RiderProjects/jobEvent/jobEvent/jobEvent.csproj",
+      "projectUniqueName": "C:\\Users\\adm111\\Source\\Repos\\jobEvent\\jobEvent.csproj",
       "projectName": "jobEvent",
-      "projectPath": "/Users/admin/RiderProjects/jobEvent/jobEvent/jobEvent.csproj",
-      "packagesPath": "/Users/admin/.nuget/packages/",
-      "outputPath": "/Users/admin/RiderProjects/jobEvent/jobEvent/obj/",
+      "projectPath": "C:\\Users\\adm111\\Source\\Repos\\jobEvent\\jobEvent.csproj",
+      "packagesPath": "C:\\Users\\adm111\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\adm111\\Source\\Repos\\jobEvent\\obj\\",
       "projectStyle": "PackageReference",
-      "UsingMicrosoftNETSdk": false,
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "/Users/admin/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\adm111\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "/usr/local/share/dotnet/library-packs": {},
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -4953,7 +4958,8 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      }
+      },
+      "SdkAnalysisLevel": "9.0.100"
     },
     "frameworks": {
       "net8.0": {
@@ -5042,7 +5048,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.401/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   },
@@ -5051,7 +5057,7 @@
       "code": "NU1608",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.CSharp.Scripting 4.12.0 requires Microsoft.CodeAnalysis.Common (= 4.12.0) but version Microsoft.CodeAnalysis.Common 4.13.0 was resolved.",
+      "message": "Версия обнаруженного пакета нарушает ограничение зависимости: Microsoft.CodeAnalysis.CSharp.Scripting 4.12.0 требуется Microsoft.CodeAnalysis.Common (= 4.12.0), но в результате разрешения получена версия Microsoft.CodeAnalysis.Common 4.13.0.",
       "libraryId": "Microsoft.CodeAnalysis.Common",
       "targetGraphs": [
         "net8.0"
@@ -5061,7 +5067,7 @@
       "code": "NU1608",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.CSharp.Scripting 4.12.0 requires Microsoft.CodeAnalysis.CSharp (= 4.12.0) but version Microsoft.CodeAnalysis.CSharp 4.13.0 was resolved.",
+      "message": "Версия обнаруженного пакета нарушает ограничение зависимости: Microsoft.CodeAnalysis.CSharp.Scripting 4.12.0 требуется Microsoft.CodeAnalysis.CSharp (= 4.12.0), но в результате разрешения получена версия Microsoft.CodeAnalysis.CSharp 4.13.0.",
       "libraryId": "Microsoft.CodeAnalysis.CSharp",
       "targetGraphs": [
         "net8.0"
@@ -5071,7 +5077,7 @@
       "code": "NU1608",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.CSharp.Scripting 4.12.0 requires Microsoft.CodeAnalysis.Scripting.Common (= 4.12.0) but version Microsoft.CodeAnalysis.Scripting.Common 4.13.0 was resolved.",
+      "message": "Версия обнаруженного пакета нарушает ограничение зависимости: Microsoft.CodeAnalysis.CSharp.Scripting 4.12.0 требуется Microsoft.CodeAnalysis.Scripting.Common (= 4.12.0), но в результате разрешения получена версия Microsoft.CodeAnalysis.Scripting.Common 4.13.0.",
       "libraryId": "Microsoft.CodeAnalysis.Scripting.Common",
       "targetGraphs": [
         "net8.0"
@@ -5081,7 +5087,7 @@
       "code": "NU1608",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.Workspaces.MSBuild 4.8.0 requires Microsoft.CodeAnalysis.Common (= 4.8.0) but version Microsoft.CodeAnalysis.Common 4.13.0 was resolved.",
+      "message": "Версия обнаруженного пакета нарушает ограничение зависимости: Microsoft.CodeAnalysis.Workspaces.MSBuild 4.8.0 требуется Microsoft.CodeAnalysis.Common (= 4.8.0), но в результате разрешения получена версия Microsoft.CodeAnalysis.Common 4.13.0.",
       "libraryId": "Microsoft.CodeAnalysis.Common",
       "targetGraphs": [
         "net8.0"
@@ -5091,7 +5097,7 @@
       "code": "NU1608",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.Workspaces.MSBuild 4.8.0 requires Microsoft.CodeAnalysis.Workspaces.Common (= 4.8.0) but version Microsoft.CodeAnalysis.Workspaces.Common 4.13.0 was resolved.",
+      "message": "Версия обнаруженного пакета нарушает ограничение зависимости: Microsoft.CodeAnalysis.Workspaces.MSBuild 4.8.0 требуется Microsoft.CodeAnalysis.Workspaces.Common (= 4.8.0), но в результате разрешения получена версия Microsoft.CodeAnalysis.Workspaces.Common 4.13.0.",
       "libraryId": "Microsoft.CodeAnalysis.Workspaces.Common",
       "targetGraphs": [
         "net8.0"

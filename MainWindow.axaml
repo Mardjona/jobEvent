@@ -4,32 +4,38 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:jobEvent"
         xmlns:models="clr-namespace:jobEvent.Models"
-        mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
+        mc:Ignorable="d" d:DesignWidth="1920" d:DesignHeight="1080"
         x:Class="jobEvent.MainWindow"
         x:CompileBindings="False" 
       
         Title="jobEvent">
    
-    <Grid RowDefinitions="Auto, Auto, *, Auto,*,Auto" ColumnDefinitions="*,*">
-     <Border Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Background="ForestGreen" Height="100">
-       <StackPanel Orientation="Horizontal">
+    <Grid RowDefinitions="Auto, Auto, Auto, Auto,*,Auto" ColumnDefinitions="auto,*">
+		
+     <Border Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Background="#e2f3c7">
+       <DockPanel Margin="10">
+		   <Border Width="90" Height="90" CornerRadius="100" Background="#78b349" Margin="10">
+			   <TextBlock Text="ЛОГОТИП" TextAlignment="Center" HorizontalAlignment="Center" VerticalAlignment="Center" ></TextBlock>
+		   </Border>
         
-           <TextBox Watermark="Введите для поиска" Width="600" Height="50" Background="WhiteSmoke" 
-                    Foreground="Black" VerticalContentAlignment="Center"></TextBox>
-       </StackPanel>
+           <TextBox Watermark="Введите для поиска" VerticalContentAlignment="Center" VerticalAlignment="Center" Margin="10"/>
+       </DockPanel>
      </Border>
-     <TextBlock Grid.Row="1" Grid.Column="0" Margin="10" FontSize="20" FontWeight="Bold" Text="Сотрудники"></TextBlock>
+		
+     <TextBlock Grid.Row="1" Grid.Column="0" Margin="10" FontSize="20" FontWeight="Bold" Text="Сотрудники"/>
+		
      <Border Grid.Row="2" Grid.Column="0" Grid.ColumnSpan="2" >
-       <ScrollViewer VerticalScrollBarVisibility="Auto">
-         <ListBox Name="employeeDesk">
+       <ScrollViewer VerticalScrollBarVisibility="Disabled"
+					 HorizontalScrollBarVisibility="Auto">
+         <ListBox Name="employeeDesk" Background="Transparent">
              <ListBox.ItemsPanel>
                  <ItemsPanelTemplate>
-                     <WrapPanel Orientation="Horizontal"  />
+                     <StackPanel Orientation="Horizontal"  />
                  </ItemsPanelTemplate>
              </ListBox.ItemsPanel>
              <ListBox.ItemTemplate>
                  <DataTemplate DataType="models:Employee">
-                     <Border Background="PaleGreen" Width="220" >
+                     <Border Background="#78b349" Width="220" >
                         <Grid RowDefinitions="*,*,*,*,*">
                          <StackPanel Grid.Row="0"  Orientation="Vertical" Spacing="5" Margin="5">
                              <TextBlock Grid.Row="0" Text="{Binding Fullname}" TextWrapping="Wrap" FontWeight="Bold" Foreground="Black"></TextBlock>
@@ -50,13 +56,13 @@
         
      <TextBlock Grid.Column="0" Grid.Row="3" Text="Календарь событий" Margin="10" FontSize="20" FontWeight="Bold"></TextBlock>
             
-     <Calendar Grid.Row="4" Grid.Column="0" Name="MainCalendar" Margin="10 0"></Calendar>
+     <Calendar Grid.Row="4" Grid.Column="0" Name="MainCalendar" Margin="10 0" IsHitTestVisible="True" IsTodayHighlighted="True" ></Calendar>
        
         <TextBlock Grid.Column="1" Grid.Row="3" Grid.ColumnSpan="2" Text="Новости" Margin="10" FontSize="20" FontWeight="Bold"></TextBlock>
         <ScrollViewer Grid.Column="1" Grid.Row="4"  VerticalScrollBarVisibility="Auto">
         <Grid >
             <!-- Список новостей -->
-            <ListBox ItemsSource="{Binding NewsItems}" Name="ListBox_imp">
+            <ListBox ItemsSource="{Binding NewsItems}" Name="ListBox_imp" Background="Transparent">
                 <ListBox.ItemsPanel>
                     <ItemsPanelTemplate>
                         <WrapPanel Orientation="Horizontal"  />
@@ -64,21 +70,22 @@
                 </ListBox.ItemsPanel>
                 <ListBox.ItemTemplate>
                      <DataTemplate DataType="local:NewsItem">
-                        <Border BorderBrush="Gray" BorderThickness="1" Margin="5"  Background="Chartreuse" Width="300">
+                        <Border BorderBrush="Gray" BorderThickness="1" Margin="5" Width="400">
                             <StackPanel Orientation="Vertical"  Spacing="5" Margin="5">
                                 <!-- Изображение новости -->
-                                <Image Source="{Binding imagePath}" Width="100" Margin="0,10,0,0"  />
-                                <StackPanel Orientation="Vertical" Background="Chartreuse">
-                                <!-- Заголовок новости -->
-                                <TextBlock Text="{Binding title}" FontSize="12" FontWeight="Bold"  Foreground="Black" TextWrapping="Wrap"/>
-                                <!-- Описание новости -->
+                                <Image Source="{Binding Image}" Width="120" Margin="0,10,0,0" />
+								<Border Background="#78b349" Padding="10">
+									<StackPanel Orientation="Vertical" >
+                                        <!-- Заголовок новости -->
+                                        <TextBlock Text="{Binding title}" FontSize="12" FontWeight="Bold"  Foreground="Black" TextWrapping="Wrap"/>
+                                    
+									    <!-- Описание новости -->
+                                        <TextBlock Text="{Binding ShortDescription}"  Foreground="Black" TextWrapping="Wrap" TextTrimming="CharacterEllipsis" Background="#78b349"  Margin="5 "/>
                                 
-                                <TextBlock Text="{Binding ShortDescription}"  Foreground="Black" TextWrapping="Wrap" TextTrimming="CharacterEllipsis" Background="Chartreuse"  Margin="5 "/>
-                                
-                                <!-- Дата новости -->
-                                <TextBlock Text="{Binding date}" FontSize="12" Foreground="Black" />
-                                </StackPanel>
-                               
+                                        <!-- Дата новости -->
+                                        <TextBlock Text="{Binding date}" FontSize="12" Foreground="Black"  Background="#78b349" />
+                                    </StackPanel>
+								</Border>
                             </StackPanel>
                         </Border>
                     </DataTemplate>

@@ -21,12 +21,14 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = jobEvent
-build_property.ProjectDir = /Users/admin/RiderProjects/jobEvent/jobEvent/
+build_property.ProjectDir = C:\Users\adm111\Source\Repos\jobEvent\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.EffectiveAnalysisLevelStyle = 8.0
+build_property.EnableCodeStyleSeverity = 
 
-[/Users/admin/RiderProjects/jobEvent/jobEvent/App.axaml]
+[C:/Users/adm111/Source/Repos/jobEvent/App.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
 
-[/Users/admin/RiderProjects/jobEvent/jobEvent/MainWindow.axaml]
+[C:/Users/adm111/Source/Repos/jobEvent/MainWindow.axaml]
 build_metadata.AdditionalFiles.SourceItemGroup = AvaloniaXaml
