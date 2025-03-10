@@ -4922,12 +4922,13 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\adm111\\Source\\Repos\\jobEvent\\jobEvent.csproj",
+      "projectUniqueName": "C:\\Users\\adm111\\source\\repos\\jobEvent\\jobEvent.csproj",
       "projectName": "jobEvent",
-      "projectPath": "C:\\Users\\adm111\\Source\\Repos\\jobEvent\\jobEvent.csproj",
+      "projectPath": "C:\\Users\\adm111\\source\\repos\\jobEvent\\jobEvent.csproj",
       "packagesPath": "C:\\Users\\adm111\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\adm111\\Source\\Repos\\jobEvent\\obj\\",
+      "outputPath": "C:\\Users\\adm111\\source\\repos\\jobEvent\\obj\\",
       "projectStyle": "PackageReference",
+      "UsingMicrosoftNETSdk": false,
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
@@ -4958,8 +4959,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.100"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -5057,7 +5057,7 @@
       "code": "NU1608",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Версия обнаруженного пакета нарушает ограничение зависимости: Microsoft.CodeAnalysis.CSharp.Scripting 4.12.0 требуется Microsoft.CodeAnalysis.Common (= 4.12.0), но в результате разрешения получена версия Microsoft.CodeAnalysis.Common 4.13.0.",
+      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.CSharp.Scripting 4.12.0 requires Microsoft.CodeAnalysis.Common (= 4.12.0) but version Microsoft.CodeAnalysis.Common 4.13.0 was resolved.",
       "libraryId": "Microsoft.CodeAnalysis.Common",
       "targetGraphs": [
         "net8.0"
@@ -5067,7 +5067,7 @@
       "code": "NU1608",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Версия обнаруженного пакета нарушает ограничение зависимости: Microsoft.CodeAnalysis.CSharp.Scripting 4.12.0 требуется Microsoft.CodeAnalysis.CSharp (= 4.12.0), но в результате разрешения получена версия Microsoft.CodeAnalysis.CSharp 4.13.0.",
+      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.CSharp.Scripting 4.12.0 requires Microsoft.CodeAnalysis.CSharp (= 4.12.0) but version Microsoft.CodeAnalysis.CSharp 4.13.0 was resolved.",
       "libraryId": "Microsoft.CodeAnalysis.CSharp",
       "targetGraphs": [
         "net8.0"
@@ -5077,7 +5077,7 @@
       "code": "NU1608",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Версия обнаруженного пакета нарушает ограничение зависимости: Microsoft.CodeAnalysis.CSharp.Scripting 4.12.0 требуется Microsoft.CodeAnalysis.Scripting.Common (= 4.12.0), но в результате разрешения получена версия Microsoft.CodeAnalysis.Scripting.Common 4.13.0.",
+      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.CSharp.Scripting 4.12.0 requires Microsoft.CodeAnalysis.Scripting.Common (= 4.12.0) but version Microsoft.CodeAnalysis.Scripting.Common 4.13.0 was resolved.",
       "libraryId": "Microsoft.CodeAnalysis.Scripting.Common",
       "targetGraphs": [
         "net8.0"
@@ -5087,7 +5087,7 @@
       "code": "NU1608",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Версия обнаруженного пакета нарушает ограничение зависимости: Microsoft.CodeAnalysis.Workspaces.MSBuild 4.8.0 требуется Microsoft.CodeAnalysis.Common (= 4.8.0), но в результате разрешения получена версия Microsoft.CodeAnalysis.Common 4.13.0.",
+      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.Workspaces.MSBuild 4.8.0 requires Microsoft.CodeAnalysis.Common (= 4.8.0) but version Microsoft.CodeAnalysis.Common 4.13.0 was resolved.",
       "libraryId": "Microsoft.CodeAnalysis.Common",
       "targetGraphs": [
         "net8.0"
@@ -5097,7 +5097,7 @@
       "code": "NU1608",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Версия обнаруженного пакета нарушает ограничение зависимости: Microsoft.CodeAnalysis.Workspaces.MSBuild 4.8.0 требуется Microsoft.CodeAnalysis.Workspaces.Common (= 4.8.0), но в результате разрешения получена версия Microsoft.CodeAnalysis.Workspaces.Common 4.13.0.",
+      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.Workspaces.MSBuild 4.8.0 requires Microsoft.CodeAnalysis.Workspaces.Common (= 4.8.0) but version Microsoft.CodeAnalysis.Workspaces.Common 4.13.0 was resolved.",
       "libraryId": "Microsoft.CodeAnalysis.Workspaces.Common",
       "targetGraphs": [
         "net8.0"

@@ -7,8 +7,16 @@
       "RelativeMoniker": "D:0:0:{CCC3D096-0F72-4241-87E4-28D7B167E520}|jobEvent.csproj|solutionrelative:mainwindow.axaml||{6D5344A2-2FCD-49DE-A09D-6A14FD1B1224}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{CCC3D096-0F72-4241-87E4-28D7B167E520}|jobEvent.csproj|c:\\users\\adm111\\source\\repos\\jobevent\\eventitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{CCC3D096-0F72-4241-87E4-28D7B167E520}|jobEvent.csproj|solutionrelative:eventitems.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{CCC3D096-0F72-4241-87E4-28D7B167E520}|jobEvent.csproj|c:\\users\\adm111\\source\\repos\\jobevent\\mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{CCC3D096-0F72-4241-87E4-28D7B167E520}|jobEvent.csproj|solutionrelative:mainwindow.axaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{CCC3D096-0F72-4241-87E4-28D7B167E520}|jobEvent.csproj|c:\\users\\adm111\\source\\repos\\jobevent\\assets\\news_response.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{CCC3D096-0F72-4241-87E4-28D7B167E520}|jobEvent.csproj|solutionrelative:assets\\news_response.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{CCC3D096-0F72-4241-87E4-28D7B167E520}|jobEvent.csproj|c:\\users\\adm111\\source\\repos\\jobevent\\newsitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,8 +38,8 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "jobEvent",
+              "DocumentIndex": 5,
+              "Title": "jobEvent.csproj",
               "DocumentMoniker": "C:\\Users\\adm111\\Source\\Repos\\jobEvent\\jobEvent.csproj",
               "RelativeDocumentMoniker": "jobEvent.csproj",
               "ToolTip": "C:\\Users\\adm111\\Source\\Repos\\jobEvent\\jobEvent.csproj",
@@ -43,26 +51,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "NewsItem.cs",
               "DocumentMoniker": "C:\\Users\\adm111\\source\\repos\\jobEvent\\NewsItem.cs",
               "RelativeDocumentMoniker": "NewsItem.cs",
               "ToolTip": "C:\\Users\\adm111\\source\\repos\\jobEvent\\NewsItem.cs",
               "RelativeToolTip": "NewsItem.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA4AAAA5AAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-07T09:11:43.185Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "MainWindow.axaml.cs",
               "DocumentMoniker": "C:\\Users\\adm111\\source\\repos\\jobEvent\\MainWindow.axaml.cs",
               "RelativeDocumentMoniker": "MainWindow.axaml.cs",
               "ToolTip": "C:\\Users\\adm111\\source\\repos\\jobEvent\\MainWindow.axaml.cs",
               "RelativeToolTip": "MainWindow.axaml.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAowCgAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACQAAACJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-07T09:20:53.777Z",
               "EditorCaption": ""
@@ -76,7 +84,33 @@
               "ToolTip": "C:\\Users\\adm111\\source\\repos\\jobEvent\\MainWindow.axaml",
               "RelativeToolTip": "MainWindow.axaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-03-07T10:03:20.58Z",
+              "WhenOpened": "2025-03-07T10:55:17.292Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "EventItems.cs",
+              "DocumentMoniker": "C:\\Users\\adm111\\source\\repos\\jobEvent\\EventItems.cs",
+              "RelativeDocumentMoniker": "EventItems.cs",
+              "ToolTip": "C:\\Users\\adm111\\source\\repos\\jobEvent\\EventItems.cs",
+              "RelativeToolTip": "EventItems.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-10T10:33:51.257Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "news_response.json",
+              "DocumentMoniker": "C:\\Users\\adm111\\source\\repos\\jobEvent\\Assets\\news_response.json",
+              "RelativeDocumentMoniker": "Assets\\news_response.json",
+              "ToolTip": "C:\\Users\\adm111\\source\\repos\\jobEvent\\Assets\\news_response.json",
+              "RelativeToolTip": "Assets\\news_response.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-10T11:17:00.796Z",
               "EditorCaption": ""
             }
           ]

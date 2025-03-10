@@ -15,11 +15,9 @@ namespace jobEvent;
 
 public partial class MainWindow : Window
 {
-    
-   
     public List<NewsItem>? NewsItems { get; set; }
     List<DateTime> listDate = new List<DateTime>()
-        {
+    {
             new DateTime(2025, 03, 04),
             new DateTime(2025, 03, 11),
             new DateTime(2025, 03, 14),
@@ -27,7 +25,18 @@ public partial class MainWindow : Window
             new DateTime(2025, 04, 19),
             new DateTime(2025, 06, 8),
             new DateTime(2025, 06, 01),
-        };
+     };
+
+    List<EventItems> events = new List<EventItems>()
+    {
+        new EventItems(0,"Общее совещание в актовом зале", "Все сотрудники отдела <Администраторы> собираемся", "Петров", "26.05.2024" ),
+        new EventItems(1,"Общее совещание в актовом зале", "Все сотрудники отдела <Администраторы> собираемся", "Петров", "26.05.2024" ),
+        new EventItems(2,"Общее совещание в актовом зале", "Все сотрудники отдела <Администраторы> собираемся", "Петров", "26.05.2024" ),
+        new EventItems(3,"Общее совещание в актовом зале", "Все сотрудники отдела <Администраторы> собираемся", "Петров", "26.05.2024" ),
+        new EventItems(3,"Общее совещание в актовом зале", "Все сотрудники отдела <Администраторы> собираемся", "Петров", "26.05.2024" ),
+        new EventItems(3,"Общее совещание в актовом зале", "Все сотрудники отдела <Администраторы> собираемся", "Петров", "26.05.2024" ),
+      
+    };
 
     public MainWindow()
     {
@@ -38,18 +47,12 @@ public partial class MainWindow : Window
         DataContext = this;
         MainCalendar.Loaded += OnCalendarLoaded;
         MainCalendar.DisplayDateChanged += CustomCalendar_DisplayDateChanged;
-      
-       
-
-
-
-
     }
     private void CustomCalendar_DisplayDateChanged(object? sender, CalendarDateChangedEventArgs e)
     {
         BrushesCalendar();
     }
-    
+
 
     private void BrushesCalendar()
     {
@@ -80,39 +83,37 @@ public partial class MainWindow : Window
                     dayButton.Background = Brushes.LightGray;
                     dayButton.Foreground = Brushes.Black;
                 }
-
             }
-           
-
         }
-
-        
     }
 
     private void OnCalendarLoaded(object sender, EventArgs e)
     {
         BrushesCalendar();
     }
-    
-
     private void EmployeeJobLoad()
     {
         List<Employee> employees = Helper.DataBase.Employees.Include(x => x.PositionNavigation).ToList();
-        
-       
-        
-      
-        employeeDesk.ItemsSource = employees;
-      //  ListBox_imp.ItemsSource = NewsItems;
 
-        
+        if (SourseTextBox == null) return;
+
+        if (!string.IsNullOrEmpty(SourseTextBox.Text))
+        {
+            employees = employees.Where(x => x.Fullname.ToLower().Contains(SourseTextBox.Text.ToLower()) || x.Workphone.Contains(SourseTextBox.Text) || x.GetPosition.ToLower().Contains(SourseTextBox.Text.ToLower())) .ToList();
+        }
+        else { employees = employees.ToList(); }
+
+        employeeDesk.ItemsSource = employees;
+        //ListBox_imp.ItemsSource = NewsItems;
+        EventListBox.ItemsSource = events;
+
     }
     private void LoadNewsData()
     {
         try
         {
             // Путь к JSON-файлу
-            var jsonFilePath =("./Assets/news_response.json");
+            var jsonFilePath = ("./Assets/news_response.json");
             if (!File.Exists(jsonFilePath))
             {
                 Console.WriteLine("Файл news_response.json не найден.");
@@ -123,8 +124,6 @@ public partial class MainWindow : Window
 
             // Десериализация JSON в список объектов NewsItem
             NewsItems = JsonSerializer.Deserialize<List<NewsItem>>(json);
-
-            
         }
         catch (Exception ex)
         {
@@ -132,6 +131,9 @@ public partial class MainWindow : Window
         }
         ListBox_imp.ItemsSource = NewsItems;
     }
+    public void TextBox_TextChanged(object? sender, TextChangedEventArgs e) => EmployeeJobLoad();
+
+
 }
 
 
@@ -139,13 +141,12 @@ public partial class MainWindow : Window
 
 
 
-    public class Holiday
-    {
-        public DateTime Date { get; set; }
-        public bool IsDayOff { get; set; } // true - выходной, false - рабочий
 
-    }
 
-    
-    
-    
+
+
+
+
+
+
+

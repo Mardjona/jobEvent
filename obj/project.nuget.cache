@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ggbOs6rIf4Y=",
+  "dgSpecHash": "/F6DJCxhmM8=",
   "success": true,
-  "projectFilePath": "C:\\Users\\adm111\\Source\\Repos\\jobEvent\\jobEvent.csproj",
+  "projectFilePath": "C:\\Users\\adm111\\source\\repos\\jobEvent\\jobEvent.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adm111\\.nuget\\packages\\avalonia\\11.0.6\\avalonia.11.0.6.nupkg.sha512",
     "C:\\Users\\adm111\\.nuget\\packages\\avalonia.angle.windows.natives\\2.1.0.2023020321\\avalonia.angle.windows.natives.2.1.0.2023020321.nupkg.sha512",
@@ -86,7 +86,7 @@
       "code": "NU1608",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Версия обнаруженного пакета нарушает ограничение зависимости: Microsoft.CodeAnalysis.CSharp.Scripting 4.12.0 требуется Microsoft.CodeAnalysis.Common (= 4.12.0), но в результате разрешения получена версия Microsoft.CodeAnalysis.Common 4.13.0.",
+      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.CSharp.Scripting 4.12.0 requires Microsoft.CodeAnalysis.Common (= 4.12.0) but version Microsoft.CodeAnalysis.Common 4.13.0 was resolved.",
       "libraryId": "Microsoft.CodeAnalysis.Common",
       "targetGraphs": [
         "net8.0"
@@ -96,7 +96,7 @@
       "code": "NU1608",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Версия обнаруженного пакета нарушает ограничение зависимости: Microsoft.CodeAnalysis.CSharp.Scripting 4.12.0 требуется Microsoft.CodeAnalysis.CSharp (= 4.12.0), но в результате разрешения получена версия Microsoft.CodeAnalysis.CSharp 4.13.0.",
+      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.CSharp.Scripting 4.12.0 requires Microsoft.CodeAnalysis.CSharp (= 4.12.0) but version Microsoft.CodeAnalysis.CSharp 4.13.0 was resolved.",
       "libraryId": "Microsoft.CodeAnalysis.CSharp",
       "targetGraphs": [
         "net8.0"
@@ -106,7 +106,7 @@
       "code": "NU1608",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Версия обнаруженного пакета нарушает ограничение зависимости: Microsoft.CodeAnalysis.CSharp.Scripting 4.12.0 требуется Microsoft.CodeAnalysis.Scripting.Common (= 4.12.0), но в результате разрешения получена версия Microsoft.CodeAnalysis.Scripting.Common 4.13.0.",
+      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.CSharp.Scripting 4.12.0 requires Microsoft.CodeAnalysis.Scripting.Common (= 4.12.0) but version Microsoft.CodeAnalysis.Scripting.Common 4.13.0 was resolved.",
       "libraryId": "Microsoft.CodeAnalysis.Scripting.Common",
       "targetGraphs": [
         "net8.0"
@@ -116,7 +116,7 @@
       "code": "NU1608",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Версия обнаруженного пакета нарушает ограничение зависимости: Microsoft.CodeAnalysis.Workspaces.MSBuild 4.8.0 требуется Microsoft.CodeAnalysis.Common (= 4.8.0), но в результате разрешения получена версия Microsoft.CodeAnalysis.Common 4.13.0.",
+      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.Workspaces.MSBuild 4.8.0 requires Microsoft.CodeAnalysis.Common (= 4.8.0) but version Microsoft.CodeAnalysis.Common 4.13.0 was resolved.",
       "libraryId": "Microsoft.CodeAnalysis.Common",
       "targetGraphs": [
         "net8.0"
@@ -126,7 +126,7 @@
       "code": "NU1608",
       "level": "Warning",
       "warningLevel": 1,
-      "message": "Версия обнаруженного пакета нарушает ограничение зависимости: Microsoft.CodeAnalysis.Workspaces.MSBuild 4.8.0 требуется Microsoft.CodeAnalysis.Workspaces.Common (= 4.8.0), но в результате разрешения получена версия Microsoft.CodeAnalysis.Workspaces.Common 4.13.0.",
+      "message": "Detected package version outside of dependency constraint: Microsoft.CodeAnalysis.Workspaces.MSBuild 4.8.0 requires Microsoft.CodeAnalysis.Workspaces.Common (= 4.8.0) but version Microsoft.CodeAnalysis.Workspaces.Common 4.13.0 was resolved.",
       "libraryId": "Microsoft.CodeAnalysis.Workspaces.Common",
       "targetGraphs": [
         "net8.0"

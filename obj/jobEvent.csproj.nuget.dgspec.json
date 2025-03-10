@@ -1,18 +1,19 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\adm111\\Source\\Repos\\jobEvent\\jobEvent.csproj": {}
+    "C:\\Users\\adm111\\source\\repos\\jobEvent\\jobEvent.csproj": {}
   },
   "projects": {
-    "C:\\Users\\adm111\\Source\\Repos\\jobEvent\\jobEvent.csproj": {
+    "C:\\Users\\adm111\\source\\repos\\jobEvent\\jobEvent.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\adm111\\Source\\Repos\\jobEvent\\jobEvent.csproj",
+        "projectUniqueName": "C:\\Users\\adm111\\source\\repos\\jobEvent\\jobEvent.csproj",
         "projectName": "jobEvent",
-        "projectPath": "C:\\Users\\adm111\\Source\\Repos\\jobEvent\\jobEvent.csproj",
+        "projectPath": "C:\\Users\\adm111\\source\\repos\\jobEvent\\jobEvent.csproj",
         "packagesPath": "C:\\Users\\adm111\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\adm111\\Source\\Repos\\jobEvent\\obj\\",
+        "outputPath": "C:\\Users\\adm111\\source\\repos\\jobEvent\\obj\\",
         "projectStyle": "PackageReference",
+        "UsingMicrosoftNETSdk": false,
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
@@ -43,8 +44,7 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+        }
       },
       "frameworks": {
         "net8.0": {
